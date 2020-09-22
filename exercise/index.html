@@ -3,14 +3,55 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Title</title>
+        <title>Twitter Clone</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="./images/favIconLight.ico">
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/tweet.css">
         <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container home-page">
+        <div class="home-page-container"> 
+            <div class="nav-container">
+                <div class="navigation">
+                    <div class="logo-container">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="home-link">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="profile-container">
+                        <div class="profile"></div>
+                    </div>
+                </div>  
+            </div>
+            <div class="main">
+                <div class="tweets-search">
+                    <input id="search-bar" type="text" placeholder="Search Twitter" spellcheck="false" onkeyup="onEnter(event)">
+                    <i class="fa fa-search fa-flip-horizontal" aria-hidden="true" onclick="getTwitterData()"></i>
+
+                </div>
+                <div class="tweets-list">
+                    
+                </div>
+            </div>
+            <div class="tweets-sidebar-container">
+                <div class="tweets-sidebar">
+                        <div class="trending">
+                            <h5>Trends for you</h5>
+                            <div class="trends">
+                                <ul>
+                                    <li>#coding</li>
+                                    <li>#camping</li>
+                                    <li>#duramax</li>
+                                    <li>#iowa</li>
+                                    <li>#summer</li>
+                                </ul>        
+                            </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="js/index.js" async defer></script>
     </body>
