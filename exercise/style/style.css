@@ -1,4 +1,167 @@
+element.style {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #1c1c1c;
 }
+
+.home-page-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.nav-container {
+    width: 20%;
+    background-color: black;
+    max-width: 100px;
+    min-width: 70px;
+    border-right: 1px solid #1c1c1c;
+}
+
+.navigation {
+    color: white;
+    margin-top: 30px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+
+
+
+
+.home-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-right: 3px solid#00ADFF;
+}
+
+.home-link i {
+    color: #00ADFF;
+    
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tweets-search {
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #979797
+}
+
+.tweets-search i {
+    color: white;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+#search-bar {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+.tweets-list {
+    margin: 20px;
+    
+}
+
+
+
+.tweets-sidebar-container {
+    flex: 1;
+    display: flex;
+}
+
+.tweets-sidebar {
+    width: 300px;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border: 1px soild darkgray;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+}
+
+.trending {
+    border: 1px solid #D8D8D8;
+    background-color: #F2F2F2;
+    color: #848586;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.trending h5 {
+    font-size: 12px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.trending ul {
+    list-style-type: none;
+    padding-left: 0px;
+
+}
+
+.trends li {
+    border-top: 1px solid green;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+

@@ -96,6 +96,7 @@ const buildTweets = (tweets, nextPage) => {
 }
 
 const buildImages = (mediaList) => {
+    console.log(mediaList);
     let imagesContent = `<div class="tweet-images-container">`;
     let imagesExist = false;
     mediaList.map((media)=>{
