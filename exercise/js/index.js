@@ -88,14 +88,16 @@ const buildTweets = (tweets, nextPage) => {
  */
 const buildImages = (mediaList) => {
     let imageContent = `<div class="image-container">`
+    let imageExists = false
     mediaList.map((media)=> {
         if (media.type == 'photo') {
+            imageExists = true
             imageContent += `<div class="tweet-image" style='background-image: url(${media.media_url_https})'></div>`
 
         }
     })
     imageContent += `</div>`
-    return imageContent
+    return imageExists ? imageContent : '';
 }
 
 /**
