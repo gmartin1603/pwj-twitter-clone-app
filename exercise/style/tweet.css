@@ -27,6 +27,21 @@
      overflow: hidden;
 }
 
+.video-container {
+    height: 200px;
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-top: 30px;
+     border: 1px solid #979797;
+     border-radius: 10px;
+     overflow: hidden;
+}
+
+.video-container > video {
+    height: 100%;
+    width: 100%;
+}
+
 .tweet-image {
     
     flex-basis: 50%;
